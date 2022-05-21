@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="Css/reset.css">
     <link rel="stylesheet" href="Css/style.css">
 </head>
+
 <body>
+   <div class="after_loader">
+       <div class="loader"></div>
+   </div>
     <header>
         <nav>
          <div class="logo">
@@ -14,27 +18,27 @@
          </div>
          <div class="menu">
              <ul>
-                 <li>Обо мне</li>
-                 <li>Услуги</li>
-                 <li>Кейсы</li>
-                 <li>Прайс</li>
-                 <li>Отзывы</li>
-                 <li>Контакт</li>
+                 <li><a href="#">Обо мне</a></li>
+                 <li><a href="#">Услуги</a></li>
+                 <li><a href="#">Кейсы</a></li>
+                 <li><a href="#">Прайс</a></li>
+                 <li><a href="#">Отзывы</a></li>
+                 <li><a href="#">Контакт</a></li>
              </ul>
          </div>
         </nav>
     </header>
-    
-    <div class="main">
+    <main>
+    <section class="main">
         <div class="title__conteiner">
             <h1>Привет <br> я Андрей Браун</h1>
             <h4>Фулл стек веб-разработчик</h4>
-            <input type="submit" value="обо мне">
-            <input type="submit" value="мои работы">
+            <input type="button" value="обо мне">
+            <input type="button" value="мои работы">
         </div>
-    </div>
+    </section>
     
-    <div class="its__me">
+    <section class="its__me">
         <h2>
             ОБО МНЕ
         </h2>
@@ -42,10 +46,10 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum debitis<br> perferendis magnam, eveniet facilis omnis esse architecto officia quisquam .</p> 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum omnis<br> consequatur iure inventore. Exercitationem, blanditiis distinctio quidem labore dolorum.
         </p>
-        <input  type="submit" value="Скачать резюме">
-    </div>
+        <input  type="button" value="Скачать резюме">
+    </section>
     
-    <div class="what__i__can">
+    <section class="what__i__can">
        <h2>
        
        ЧТО Я УМЕЮ
@@ -77,9 +81,9 @@
             </div>
             </div>
  
-    </div>
+    </section>
     
-    <div class="cases">
+    <section class="cases">
         <h2>КЕЙСЫ</h2> <br>
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, necessitatibus?</h4><br>
         <img src="img/opencloud.png" alt="пример кейса">
@@ -98,10 +102,10 @@
             </div>
             
         </div>    
-        <input type="submit" value="VISIT LIVE SITE">
-    </div>
+        <input type="button" value="VISIT LIVE SITE">
+    </section>
     
-    <div class="money">
+    <section class="money">
         <h2>Расчёт стоймости</h2>
         <div class="categories">
             <div>
@@ -126,15 +130,15 @@
                     <option value="opt">Выберите пункт...</option>
                     <option value="opt">Выберите пункт...</option>
                     <option value="opt">Выберите пункт...</option>
-                </select> 
-               
+                </select>   
+            </div>
         </div>
-     
-        </div>
+        
         <img src="img/lineeng.png" alt="#" class="lineeng">
         <div class="string">Сроки </div> <div class="string zero">0</div><br>
         <div class="string">Стоймость </div> <div class="string zero">0</div><br>
-    <div class="statistic">
+       </section>
+    <section class="statistic">
          <h2>
              НЕМНОГО СТАТИСТИКИ 
          </h2>
@@ -165,8 +169,8 @@
             </div>
             </div>
             
-        </div>
-        <div class="reviews">
+        </section>
+        <section class="reviews">
             <h2>ОТЗЫВЫ</h2>
             <img src="img/photomen.png" alt="мини фото человека"> <br>
             <div>
@@ -177,13 +181,13 @@
             <input type="radio" name="text_input" value="1">
             <input type="radio" name="text_input" value="2">
             <input type="radio" name="text_input" value="3">
-        </div>
+        </section>
         
-        <div class="contact">
+        <section class="contact">
             <h2>МОИ КОНТАКТЫ</h2> <br>
             <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4><br>
            <div class="icon geo">
-                    <div  >
+                    <div>
                 <img src="img/geo.png" alt="точка карты"><br>
                 Санкт-Петербург <br> Невский проспект 11   
             </div>
@@ -203,7 +207,7 @@
             <input type="text" name="email" placeholder="Email"><br>
             <textarea name="SMS" id="SMS" cols="30" rows="10" placeholder="Сообщение"></textarea><br>
             
-            <input type="submit" value="Отправить" id="send" ><br>
+            <input type="button" value="Отправить" id="send" ><br>
         
            <div class="icons">
                 <a href="#"><img src="img/facebook.png" alt="фейсбук"></a>
@@ -213,13 +217,14 @@
             <a href="#"><img src="img/instagramm.png" alt="Instagramm"></a>
             <a href="#"><img src="img/in.png" alt="IN"></a>
            </div>
-        </div>
-        <div class="map">
+        </section>
+        <section class="map">
           <p>I'M HERE</p>
-        </div>
+        </section>
         <footer>
             Copyright © 2021 Андрей Браун. Design by Web
         </footer>
+        </main>
 </body>
 
 </html>
