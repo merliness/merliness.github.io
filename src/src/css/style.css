@@ -1,0 +1,441 @@
+@font-face {
+	font-family: 'FranklinGot';
+	src: url('../fonts/fonts/framd.eot');
+	src: local('☺'), url('../fonts/fonts/framd.woff') format('woff'), url('../fonts/fonts/framd.ttf') format('truetype'), url('../fonts/fonts/framd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'calibri';
+	src: url('../fonts/fonts/calibri.eot');
+	src: local('☺'), url('../fonts/fonts/calibri.woff') format('woff'), url('../fonts/fonts/calibri.ttf') format('truetype'), url('../fonts/fonts/calibri.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+body h2{
+    text-align: center;
+}
+.after_loader{
+    justify-content: center;
+    align-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    background: #fff;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    animation: after_loader 3s ease-in forwards;
+   
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 10px solid #2c384a;
+    border-radius: 50%;
+    border-left-color:#d17700;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation: loader 1.5s linear infinite;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+    position: fixed;
+    font-family: "FranklinGot", sans-serif;
+    z-index: 4;
+    
+}
+.logo{
+    color:#fff;
+    font-size: 28px;
+    line-height: 60px;
+    float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
+}
+.menu{
+    float:left;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    margin-right: 40px;
+    color:#fff;
+    font-size: 14px;
+    text-transform: uppercase;
+     -webkit-animation: topshift 2s ease forwards;
+    -o-animation:topshift 2s ease forwards ;
+    animation: topshift 2s ease forwards;
+    opacity: 0;
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background: url(../img/boy.png) 90% 100%/auto 85% no-repeat ,url(../img/bg.jpg)center/cover no-repeat;
+}
+.title__conteiner{
+    float: left;
+    color: #2c384a;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    -webkit-animation: title__conteiner 2s ease forwards;
+    -o-animation: title__conteiner 2s ease forwards;
+    animation: title__conteiner 2s ease forwards;
+    animation-delay: 2s;
+}
+.title__conteiner h1{
+    font-family: "FranklinGot", sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+}
+.title__conteiner h4{
+    margin-top: 40px;
+    font-size: 22px;
+    color:#79818d;
+    
+}
+.title__conteiner input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color:#6d7682;
+    font-size: 13px;
+    padding: 0px 16px;
+    margin: 58px 14px 0px 14px;
+}
+.its__me{
+    box-shadow:-20px 0px 5px 1px;
+    width: 100%;
+    height: auto;
+    justify-content:space-between;
+    display: flex;
+   
+}
+.its__me h2{
+    font-family: "FranklinGot",sans-serif;
+    color:#263244;
+    text-transform: uppercase;
+    font-size: 30px;
+    background: url(../img/line.jpg)50% 100%/70px 5px no-repeat;
+    float: left;
+    text-align: center;
+}
+.its__me img{
+    transition:transform 3s  ;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    float: left;
+}
+.its__me p{
+    color:#626976;
+    float: left;
+    font-size: 16px;
+    font-family: "calibri", sans-serif;
+}
+.its__me input{
+     height: 30px;
+    border: 2px solid #6d7682;
+    background: url(../img/down.jpg)13px 50%/auto auto no-repeat ;
+    border-radius: 5px;
+    padding: 0px 15px 0px 35px;
+    color:#6d7682;
+    width: auto;
+    transition: all 0.1s;
+    float: left;
+}
+.what__i__can{
+    width: 100%;
+    height: auto;
+    background: url(../img/bg2.jpg) no-repeat;
+    background-attachment: fixed;
+    
+    background-position: center;
+}
+.what__i__can h2{
+    font-family: "FranklinGot",sans-serif;
+    background: url(../img/line.jpg)50% 95%/70px 5px no-repeat;
+    color:#263244;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.icon{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.icon div{
+    float: left;
+}
+.icon h4{
+    color:#cf7600;
+    font-size: 20px;
+}
+
+.icon p{
+    color:#3f495a;
+}
+.cases{
+    width: 100%;
+    height: auto;
+}
+.cases h2{
+    font-family: "FranklinGot",sans-serif;
+    font-style: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    color:#263244;
+    background: url(../img/line.jpg)50% 95%/70px 5px no-repeat;
+}
+.cases h4{
+    font-family: "calibri",sans-serif;
+    font-size: 14px;
+    color:#3f495a;
+}
+.opencloud{
+
+}
+.mini_bar{
+    color: #384354;
+    float: left;
+    text-decoration: none;
+}
+
+.bar{
+    float: left;
+    color: #384354;
+    width: auto;
+}
+.bar h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "FranklinGot",sans-serif;
+}
+.bar p{
+    font-family:  "calibri",sans-serif;
+    font-size: 14px;
+}
+.name_progect{
+    color: #384354;
+     font-family:  "calibri",sans-serif;
+}
+.name_progect>h3{
+    font-size: 30px;
+    font-family: "FranklinGot",sans-serif;
+}
+.cases input{
+    height: 40px;
+    border: 2px solid #63b5ae;
+    background: #63b5ae;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size: 13px;
+    padding: 0px 16px;
+    transition: all 0.1s;
+    width: auto;
+    font-family:  "calibri",sans-serif;
+}
+.money{
+    width: 100%;
+    height: auto;
+    box-shadow:-20px 0px 5px 1px #efefef;
+    font-family:  "calibri",sans-serif;
+    font-size: 16px;
+}
+.money input{
+    height: 40px;
+    border: 2px solid #63b5ae;
+    background: #63b5ae;
+    border-radius: 5px;
+    color:#ffffff;
+    font-size: 13px;
+    padding: 0px 16px;
+    transition: all 0.1s;
+    width: auto;
+}
+.money h2{
+    color: #1c2534;
+    font-size:30px;
+    font-family: "FranklinGot",sans-serif;
+}
+
+.categories h3{
+    color: 1c2534;
+    font-size: 25px;
+    font-family: "FranklinGot",sans-serif;
+   
+ 
+}
+.categories .list{
+    height: 50px;
+    line-height: 50px;
+    background: #efefef;
+    color: #747474;
+    border: 1px solid #efefef;
+  
+}
+
+.string{
+    color: #1c2534;
+    font-size: 18px;
+    display: flex;
+}
+.zero{
+    display: flex;
+    justify-content: flex-end;
+}
+.statistic{
+    
+     width: 100%;
+    height: auto;
+    background: url(../img/bg3.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.statistic h2{
+    background: url(../img/line.jpg)50% 95%/70px 5px no-repeat;
+    color:#263244;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: "FranklinGot",sans-serif;
+}
+.statistic h4{
+    color: #323e4f;
+    font-weight: 900;
+     font-family:  "calibri",sans-serif;
+    font-size: 25px
+}
+.statistic p{
+    color:#323e4f;
+    font-family:  "calibri",sans-serif;
+    font-size: 16px;
+}
+.reviews{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.reviews h2{
+    font-family: "FranklinGot",sans-serif;
+    background: url(../img/line.jpg)50% 95%/70px 5px no-repeat;
+    color:#263244;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.reviews img{
+}
+.reviews div{
+    color: #243042;
+    font-family:  "calibri",sans-serif;
+}
+.reviews .mihail{
+    font-weight: bold;
+     color: #243042;
+     font-family:  "calibri",sans-serif;
+}
+.reviews input{
+    
+    transition: all 0.1s scale(1)
+    
+}
+.reviews p{
+     font-family:  "calibri",sans-serif;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    width: 100%;
+    height: auto;
+    background: url(../img/bg4.png)100% 50% no-repeat;
+    color:#fff;
+    
+}
+.contact h2{
+    font-family: "FranklinGot",sans-serif;
+    background: url(../img/line.jpg)50% 95%/70px 5px no-repeat;
+    color:#ffffff;
+    font-size: 30px;
+    padding-left: 3%;
+}
+
+.contact h3{
+    font-family:  "calibri",sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.inputs{
+    display: flex;
+    justify-content:space-around;
+    font-size: 14px;
+}
+
+.contact input{
+    height: 35px;
+    background: #d2d6dc;
+    color:#5d5d5e;
+    transition: all 0.1s scale(1.2);
+    
+}
+.contact textarea{
+    background: #d2d6dc;
+    color:#5d5d5e; 
+}
+#send{
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    color:#fff;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.
+.icons a{
+    transition: all 0.1s scale(1);
+}
+.contact h4{
+   font-size:16px;
+    
+    
+}
+.map{
+    width: 100%;
+    height: auto;
+}
+.map p{
+    text-align: center;
+    color:#000;  
+    font-weight: bold;  
+    line-height: 50px;
+    background: #fff;
+}
+footer{
+    width: 100%;
+    height: 95px;
+    background: #354051;
+    color:#fff;
+    text-align: center;
+    line-height: 95px;
+}
