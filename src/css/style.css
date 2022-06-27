@@ -60,6 +60,9 @@ nav{
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
 }
+.logo a{
+    color:#fff;
+}
 .menu{
     float:left;
 }
@@ -118,6 +121,13 @@ main{
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
 }
+.element-animation{
+    opacity: 0;
+}
+.element-animation.show-animation{
+    opacity: 1;
+    transition: opacity 1s;
+}
 .its__me{
     box-shadow:-20px 0px 5px 1px;
     width: 100%;
@@ -140,6 +150,14 @@ main{
     border: 1px solid #fff;
     border-radius: 50%;
     float: left;
+}
+
+.oen{
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.oen img{
+    position: relative;
 }
 .its__me p{
     color:#626976;
@@ -318,7 +336,8 @@ main{
     color: #323e4f;
     font-weight: 900;
      font-family:  "calibri",sans-serif;
-    font-size: 25px
+    font-size: 25px;
+    
 }
 .statistic p{
     color:#323e4f;
@@ -337,8 +356,7 @@ main{
     text-transform: uppercase;
     font-size: 35px;
 }
-.reviews img{
-}
+
 .reviews div{
     color: #243042;
     font-family:  "calibri",sans-serif;
@@ -438,4 +456,7 @@ footer{
     color:#fff;
     text-align: center;
     line-height: 95px;
+}
+.active{
+    background-color: #e88402;
 }

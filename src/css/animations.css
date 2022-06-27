@@ -75,6 +75,7 @@
 }
 .menu li a:active{
     transform: scale(1.1);
+
 }
 .title__conteiner input{
     transition: all 0.1s scale(1);
@@ -100,12 +101,7 @@
     box-shadow:  0 0 5px #ffffff, 0 0 8px #ffffff, 0 0 11px #ffffff, 0 0 14px #0000ff, 0 0 17px #0000ff, 0 0 20px #0000ff, 0 0 23px #0000ff, 0 0 26px #0000ff;
     
 }
-.its__me img:hover{
-   transform: rotate(360deg);
-}
-.icon img:hover{
-    transform: scale(1.2);
-}
+
 .cases input:active{
     background: #c32d2d;
     

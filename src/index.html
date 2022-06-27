@@ -8,10 +8,14 @@
     <meta name="robots" content="all">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    
     
 </head>
 
@@ -20,20 +24,20 @@
        <div class="loader"></div>
    </div>
     <header>
-       <nav>
+       <nav >
         <div class="container">
             <div class="row"> 
-         <div class="logo col-xxl-2 col-xl-3 col-lg-3 col-md-7 col-sm-8 col-8 ">
-             Андрей Браун    
+         <div class="logo col-xxl-2 col-xl-3 col-lg-3 col-md-7 col-sm-8 col-8 " >
+            <a href="#mainer">Андрей Браун  </a>   
          </div>
          <div class="menu px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4  offset-xl-2 offset-lg-1 d-none d-lg-flex ">
              <ul>
-                 <li><a href="#">Обо мне</a></li>
-                 <li><a href="#">Услуги</a></li>
-                 <li><a href="#">Кейсы</a></li>
-                 <li><a href="#">Прайс</a></li>
-                 <li><a href="#">Отзывы</a></li>
-                 <li><a href="#">Контакт</a></li>
+                 <li><a class="active" href="#me">Обо мне</a></li>
+                 <li><a href="#services">Услуги</a></li>
+                 <li><a href="#case">Кейсы</a></li>
+                 <li><a href="#price">Прайс</a></li>
+                 <li><a href="#review">Отзывы</a></li>
+                 <li><a href="#contacts">Контакт</a></li>
              </ul>
          </div>
          <div class="dropdown col-2 col-sm-4 col-md-5 d-flex d-lg-none flex-column justify-content-center align-items-end ">
@@ -41,12 +45,12 @@
     <i class="fa fa-bars" aria-hidden="true"></i>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Обо мне</a></li>
-    <li><a class="dropdown-item" href="#">Услуги</a></li>
-    <li><a class="dropdown-item" href="#">Кейсы</a></li>
-    <li><a class="dropdown-item" href="#">Прайс</a></li>
-    <li><a class="dropdown-item" href="#">Отзывы</a></li>
-    <li><a class="dropdown-item" href="#">Контакт</a></li>
+    <li><a class="dropdown-item" href="#me">Обо мне</a></li>
+    <li><a class="dropdown-item" href="#services">Услуги</a></li>
+    <li><a class="dropdown-item" href="#case">Кейсы</a></li>
+    <li><a class="dropdown-item" href="#price">Прайс</a></li>
+    <li><a class="dropdown-item" href="#review">Отзывы</a></li>
+    <li><a class="dropdown-item" href="#contacts">Контакт</a></li>
   </ul>
 </div>
         
@@ -55,7 +59,7 @@
         </nav>
     </header>
     <main>
-    <section class="main">
+    <section class="main section " id="mainer">
        <div class="container h-100 pt-5">
               <div class="row col-xxl-6 col-xl-6 align-items-center h-100 mt-5 pt-5">
                <div class="title__conteiner ">
@@ -69,14 +73,14 @@
         
     </section>
     
-    <section class="its__me">
+    <section class="its__me section element-animation" id="me">
        
        <div class="container ">
            <div class="row d-flex flex-column col-xxl-8 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 offset-xxl-2 offset-xl-0 offset-lg-0   align-items-center h-100 pt-5 mt-5">
              <h2 class="col-xxl-3 col-xl-2 col-lg-3 col-md-3 col-sm-4 col-8  pb-5 mb-5 ">
               ОБО МНЕ
              </h2>
-               <img class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5 " src="img/round%20guy.jpg" alt="мини фотка" ><br>
+               <div class="oen col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5"><img class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5  " src="img/round%20guy.jpg" alt="мини фотка" ></div><br>
             <p class="col-xxl-8 col-xl-8 col-lg-8 col-md-9 col-sm-10 col-10  pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum debitis perferendis magnam, eveniet facilis omnis esse architecto officia quisquam .</p> 
             <p class="col-xxl-8 col-xl-8 col-lg-8 col-md-9 col-sm-10 col-10 pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum omnis consequatur iure inventore. Exercitationem, blanditiis distinctio quidem labore dolorum.
             </p>
@@ -87,7 +91,7 @@
         
     </section>
     
-    <section class="what__i__can">
+    <section class="what__i__can section element-animation" id="services">
        <div class="container">
            <div class="row col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex justifu-content-center h-100">
                <h2 class="col-xxl-2 col-xl-4 col-lg-4 col-md-4 col-sm-5 col-6 offset-xxl-5 offset-xl-4 offset-lg-4 offset-md-4 offset-sm-4 offset-3 pt-5 mt-5 pb-5" >
@@ -124,18 +128,37 @@
        
  
     </section>
-    <section class="cases">
+    <section class="cases section element-animation" id="case">
        <div class="container">
            <div class="row col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center h-100">
                 <h2 class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6  pt-5 pb-5 ">КЕЙСЫ</h2> <br>
             <h4 class="col-xxl-8 col-xl-8 col-lg-10 col-md-10 col-sm-10 col-12 offset-xxl-4 offset-xl-4 offset-lg-2 offset-md-2 offset-sm-2 offset-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, necessitatibus?</h4><br>
-            <div id="carouselExampleSlidesOnly" class="carousel slide col-12 opencloud" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img  src="img/opencloud.png" class="d-block w-100  " alt="1">
-                    </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
+                  <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/opencloud.png" class="d-block w-100 image-link " href="img/opencloud.png" alt="...">
                 </div>
+                <div class="carousel-item">
+                  <img src="img/case2.png" class="d-block w-100 image-link" href="img/case2.png" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/case3.png" class="d-block w-100 image-link" href="img/case3.png" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
                 <div class="mini_bar">
                    <div class="bar">
                     <h3 class="col-xxl-1 col-xl-1">Client:</h3>
@@ -158,7 +181,7 @@
      </section>
        
     
-    <section class="money">
+    <section class="money section element-animation" id="price">
        <div class="container">
            <div class="row shadow col-xxl-10 col-xl-12 offset-xxl-1 d-flex flex-column  align-items-center  h-100">
                        <h2 class="col-xxl-4 col-xl-4 offset-xxl-1 mt-5 mb-5 ">Расчёт стоймости</h2>
@@ -200,33 +223,33 @@
        </div>
         
        </section>
-    <section class="statistic">
-        <div class="container">
-            <div class="row col-xxl-12 col-xl-12 col-lg-12 d-flex justifu-content-center h-100">
+    <section class="statistic section element-animation">
+        <div class="container  ">
+            <div class="row benefits__inner col-xxl-12 col-xl-12 col-lg-12 d-flex justifu-content-center h-100">
                  <h2 class="col-xxl-4 col-xl-6 col-lg-6 col-md-8 col-sm-10 col-10 offset-xxl-4 offset-xl-3 offset-lg-3 offset-md-2 offset-sm-1 offset-1 pt-5 mt-5 pb-5 ml-5">
                  НЕМНОГО СТАТИСТИКИ 
                  </h2>
             <div class="icon pt-5 col-xxl-12 col-xl-12 col-sm-12 ">
                 <div>
                 <img src="img/smail.png" alt="смайлик"><br>
-                <h4>120</h4><br>
+                <h4 class="Count activee ">120</h4><br>
                   <p>  Счастливых клиентов</p>
             </div>
             <div>
                  <img src="img/skobi.png" alt="иконка кода"><br>
-                <h4>4,600</h4><br>
+                <h4 class="Count activee">4600</h4><br>
                 <p>Часов работы </p>
             </div>
           
             <div>
                 <img src="img/gl.png" alt="иконка отметки"><br>
-                <h4>340</h4><br>
+                <h4 class="Count activee" >340</h4><br>
                 <p>проектов завершено</p>
             </div>
             
             <div>
                 <img src="img/cup.png" alt="иконка кубка"><br>
-                <h4>23</h4><br>
+                <h4 class="Count activee" >23</h4><br>
                 <p>наград получено</p>
             </div>
             </div>
@@ -236,11 +259,17 @@
         
         </section>
        
-        <section class="reviews">
+        <section class="reviews section element-animation" id="review">
              <div class="container">
             <div class="row d-flex flex-column col-xxl-8 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 offset-xxl-2 offset-xl-1 offset-lg-1 offset-md-1  align-items-center h-100 pt-5 mt-5">
                 <h2 class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-10  pb-5 mb-5">ОТЗЫВЫ</h2>
-            <img class="col-xxl-2 col-xl-2 col-lg-2 col-md-2  col-sm-3 col-4" src="img/photomen.png" alt="мини фото человека"> <br>
+                
+                <div dir="rtl" class="single-item-rtl col-xxl-2 col-xl-2 col-lg-2 col-md-2  col-sm-3 col-4">
+                  <img class="col-xxl-2 col-xl-2 col-lg-2 col-md-2  col-sm-3 col-4 " src="img/photomen.png" alt="мини фото человека">
+                  <img class="col-xxl-2 col-xl-2 col-lg-2 col-md-2  col-sm-3 col-4 " src="img/photomen.png" alt="мини фото человека"> 
+                </div>
+                
+                <br>
             <div class="col-xxl-8 col-xl-8 col-md-10  col-sm-12 mt-5 mb-5">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Dolorem, nesciunt. Rem magnam accusamus nulla minus est quibusdam totam dolorum explicabo cum <br>pariatur perferendis laboriosam culpa sequi, asperiores, necessitatibus quasi. Quidem. <br>
             </div>
@@ -257,7 +286,7 @@
         </div>
         </section>
         
-        <section class="contact">
+        <section class="contact section element-animation" id="contacts">
            <div class="container">
                <div class="row d-flex flex-column col-xxl-8 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 offset-xxl-2 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1 align-items-center h-100 pt-5 mt-5">
                     <h2 class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-8 pb-5  ">МОИ КОНТАКТЫ</h2> <br>
@@ -300,7 +329,7 @@
            
         </section>
         
-        <section class="map position-relative ">
+        <section class="map position-relative  ">
          <img class="img-fluid" src="img/cart.jpg" alt="">
          <div class="container">
              <div class="row  position-absolute  d-flex  h-100 col-xll-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 top-0 start-0 ">
@@ -312,8 +341,12 @@
             Copyright © 2021 Андрей Браун. Design by Web
         </footer>
         </main>
-        <script src="js/MyJs.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/MyJs.js"></script>
+<!--        <script src="js/custom.js"></script>-->
 </body>
 
 </html>

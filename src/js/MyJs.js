@@ -1,117 +1,104 @@
-"use strict"
+$(document).ready(function(){
+    $(window).scroll(function(){
+       let scrollDistance = $(window).scrollTop();
+        
+        $(".section").each((i,el)=> {
+            
+            if($(el).offset().top - $("nav").outerHeight() <= (scrollDistance-300)){
+                
+                $("nav a").each((i,el) =>{
+                    if ($(el).hasClass("active")){
+                        $(el).removeClass("active");
+                    }
+                    
+                });
+                $('nav li:eq('+ i +')').find('a').addClass('active');
+            }
+        });
+    });
+    let options ={threshold: [0.2]};
+        let observer = new IntersectionObserver(onEntry, options);
+        let elements = $('.element-animation');
+    elements.each((i,el) => {
+        observer.observe(el);
+    });
+    animBg();
+    $('.image-link').magnificPopup({type:'image'});
+    
+   
+    
+});
 
-let sait = prompt("Выберите тип сайта: 0)LANDING PAGE (ОДНОСТРАНИЧНЫЙ САЙТ), 1)САЙТ-ВИЗИТКА, 2)КОРПОРАТИВНЫЕ САЙТЫ, 3)ПРОМО-САЙТЫ");
-let design = prompt("Выберите дизайн сайта: 0)МИНИМАЛИЗМ, 1)КРАСИВАЯ ТИПОГРАФИКА, 2)КЛАССИЧЕСКИЙ СТИЛЬ, 3)КОРПОРАТИВНЫЙ СТИЛЬ");
-let adaptability = prompt("Выберите адаптивность сайта : 0)Не адаптивный, 1)Адаптивный");
 
-let mass=[
-    sait,
-    design,
-    adaptability,
-];
-if ((mass[0] === "0") && (mass[1] === "0") && (mass[2] === "0")){
-    alert("Сроки : 4-5 дней");
-    alert("Стоймость : 15000 рублей");
-}
-else if((mass[0] === "0") && (mass[1] === "0") && (mass[2] === "1")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 17000 рублей");
-}
-else if((mass[0] === "1") && (mass[1] === "0") && (mass[2] === "0")){
-    alert("Сроки : от 4 рабочих дней");
-    alert("Стоймость : 16000 рублей");
-}else if((mass[0] === "2") && (mass[1] === "0") && (mass[2] === "0")){
-    alert("Сроки : от 7 рабочих дней");
-    alert("Стоймость : 25000 рублей");
-}
-else if((mass[0] === "3") && (mass[1] === "0") && (mass[2] === "0")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 18000 рублей");
-}
-else if((mass[0] === "0") && (mass[1] === "1") && (mass[2] === "0")){
-    alert("Сроки : от 3 рабочих дней");
-    alert("Стоймость : 17000 рублей");
-}
-else if((mass[0] === "0") && (mass[1] === "2") && (mass[2] === "0")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 19000 рублей");
-}
-else if((mass[0] === "0") && (mass[1] === "3") && (mass[2] === "0")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 17000 рублей");
-}
-else if((mass[0] === "1") && (mass[1] === "1") && (mass[2] === "0")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 17000 рублей");
-}
-else if((mass[0] === "2") && (mass[1] === "1") && (mass[2] === "0")){
-    alert("Сроки : от 4 рабочих дней");
-    alert("Стоймость : 17500 рублей");
-}
-else if((mass[0] === "3") && (mass[1] === "1") && (mass[2] === "0")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 20000 рублей");
-}
-else if((mass[0] === "1") && (mass[1] === "2") && (mass[2] === "0")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 19000 рублей");
-}
-else if((mass[0] === "2") && (mass[1] === "2") && (mass[2] === "0")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 23500 рублей");
-}
-else if((mass[0] === "3") && (mass[1] === "2") && (mass[2] === "0")){
-    alert("Сроки : от 6 рабочих дней");
-    alert("Стоймость : 22000 рублей");
-}
-else if((mass[0] === "1") && (mass[1] === "3") && (mass[2] === "0")){
-    alert("Сроки : от 6 рабочих дней");
-    alert("Стоймость : 18000 рублей");
-}
-else if((mass[0] === "2") && (mass[1] === "3") && (mass[2] === "0")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 19500 рублей");
-}
-else if((mass[0] === "3") && (mass[1] === "3") && (mass[2] === "0")){
-    alert("Сроки : от 7 рабочих дней");
-    alert("Стоймость : 24000 рублей");
-}
-else if((mass[0] === "1") && (mass[1] === "1") && (mass[2] === "1")){
-    alert("Сроки : от 6 рабочих дней");
-    alert("Стоймость : 19000 рублей");
-}
-else if((mass[0] === "2") && (mass[1] === "1") && (mass[2] === "1")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 19500 рублей");
-}
-else if((mass[0] === "3") && (mass[1] === "1") && (mass[2] === "1")){
-    alert("Сроки : от 6 рабочих дней");
-    alert("Стоймость : 22000 рублей");
-}
-else if((mass[0] === "1") && (mass[1] === "2") && (mass[2] === "1")){
-    alert("Сроки : от 5 рабочих дней");
-    alert("Стоймость : 19000 рублей");
-}
-else if((mass[0] === "2") && (mass[1] === "2") && (mass[2] === "1")){
-    alert("Сроки : от 6 рабочих дней");
-    alert("Стоймость : 25500 рублей");
-}
-else if((mass[0] === "3") && (mass[1] === "2") && (mass[2] === "1")){
-    alert("Сроки : от 7 рабочих дней");
-    alert("Стоймость : 24000 рублей");
-}
-else if((mass[0] === "1") && (mass[1] === "3") && (mass[2] === "1")){
-    alert("Сроки : от 7 рабочих дней");
-    alert("Стоймость : 20000 рублей");
-}
-else if((mass[0] === "2") && (mass[1] === "3") && (mass[2] === "1")){
-    alert("Сроки : от 6 рабочих дней");
-    alert("Стоймость : 21500 рублей");
-}
-else if((mass[0] === "3") && (mass[1] === "3") && (mass[2] === "1")){
-    alert("Сроки : от 8 рабочих дней");
-    alert("Стоймость : 26000 рублей");
-}
-else{
-    alert("Ошибка ввода,пожалуйста используйте цифры в обозначении")
+function onEntry (entry){
+    entry.forEach(change =>{
+        if (change.isIntersecting){
+            change.target.classList.add('show-animation');
+        }
+    });
 };
+
+function animBg() {
+	$('.oen img').animate({
+	   'width': '120%',
+	  'left': '-10%',
+	  'top': '-10%'
+	  }, 3000)
+   	.animate({
+            'width': '100%',
+            'left': '0',
+            'top': '0'
+        }, 3000, animBg)
+};
+
+
+$('a[href^="#"]').click(function(){
+    let valHref = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(valHref).offset().top -50 + "px"})
+});
+$(document).ready(function() {
+  
+});
+$('.single-item-rtl').slick({
+  rtl: true
+});
+
+
+var block_show = false;
+ 
+function scrollTracking(){
+	if (block_show) {
+		return false;
+	}
+ 
+	var wt = $(window).scrollTop();
+	var wh = $(window).height();
+	var et = $('.activee').offset().top;
+	var eh = $('.activee').outerHeight();
+	var dh = $(document).height();   
+ 
+	if (wt + wh >= et || wh + wt == dh || eh + et < wh){
+		block_show = true;
+		
+		// Код анимации
+        $('.Count').each(function () {
+        var $this = $(this);
+        jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function () {
+      $this.text(Math.ceil(this.Counter));
+    }
+  });
+});
+		
+	}
+}
+ 
+$(window).scroll(function(){
+	scrollTracking();
+});
+	
+$(document).ready(function(){ 
+	scrollTracking();
+});
