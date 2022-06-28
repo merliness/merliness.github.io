@@ -1,7 +1,5 @@
 let siteAnswer, designAnswer, adaptiveAnswer;
-const saitIpe = document.querySelector('.tape_sait');
-const saitDis = document.querySelector('.disaing');
-const saitAd = document.querySelector('.adaptiviti');
+
 const options = document.querySelectorAll('option');
 let calculator = {
 	price: [
@@ -24,30 +22,21 @@ let calculator = {
 
 	}
 }
-function getAnswers(){
-    siteAnswer = saitIpe.value ;
-    if(siteAnswer != 1 && siteAnswer != 2 && siteAnswer != 3){
-        getAnswers();
-        return;
-    }
-    designAnswer = saitDis.value ;
-     if(designAnswer != 1 && designAnswer != 2 && designAnswer != 3){
-        getAnswers();
-        return;
-    }
-    adaptiveAnswer = saitAd.value;
-     if(adaptiveAnswer != 1 && adaptiveAnswer != 2 && adaptiveAnswer != 3){
-        getAnswers();
-        return;
-    }
-    calculator.run(siteAnswer, designAnswer, adaptiveAnswer);
-}
-
-getAnswers();
 
 $('select').change(function(){
     getAnswers();
 });
+
+
+function getAnswers(){
+    siteAnswer =document.querySelector('.tape_sait').value;
+    designAnswer = document.querySelector('.disaing').value;
+    adaptiveAnswer = document.querySelector('.adaptiviti').value;
+    calculator.run(siteAnswer, designAnswer, adaptiveAnswer);
+};
+
+getAnswers();
+
 
 
 
