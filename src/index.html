@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  
    <div class="after_loader">
        <div class="loader"></div>
    </div>
@@ -188,34 +189,40 @@
                 <div class="categories">
                     <div>
                         <h3>Тип сайта</h3>
-                        <select name="list1" class="list col-12 mb-5" >
-                            <option value="opt">Выберите пункт...</option>
-                            <option value="opt">Выберите пункт...</option>
-                            <option value="opt">Выберите пункт...</option>
+                        <select name="list1" class="list col-12 mb-5"  >
+                            <option class="tape_sait " value="1">Визитка</option>
+                            <option class="tape_sait" value="2">Корпоративный</option>
+                            <option class="tape_sait" value="3">Интернет-магазин</option>
                         </select>
                     </div>
                     <div>
                         <h3>Дизайн</h3>
-                        <select name="list2" class="list col-12  mb-5" >
-                            <option value="opt">Выберите пункт...</option>
-                            <option value="opt">Выберите пункт...</option>
-                            <option value="opt">Выберите пункт...</option>
+                        <select name="list2" class="list col-12  mb-5"  >
+                            <option class="disaing" value="1">Шаблонный</option>
+                            <option class="disaing" value="2">Уникальный</option>
+                            <option class="disaing" value="3">WOW-Дизайн</option>
                         </select>
                     </div>
                     <div>
                         <h3>Адаптивность </h3>
                         <select name="list3" class="list col-12  mb-5" >
-                            <option value="opt">Выберите пункт...</option>
-                            <option value="opt">Выберите пункт...</option>
-                            <option value="opt">Выберите пункт...</option>
+                            <option class="adaptiviti" value="1">Только ПК</option>
+                            <option class="adaptiviti" value="2">Только Мобильная версия</option>
+                            <option class="adaptiviti" value="3">ПК + Мобильный</option>
                         </select>   
                     </div>
                 </div>
 
                   <img src="img/lineeng.png" alt="#" class="lineeng">
                <div class="string col-12 ">
-                    <div class="col-11">Сроки <br> Стоймость </div>
-                    <div class="col-1 zero ;" >0 <br> 0</div><br>
+                   <div class="col-6">
+                       Сроки <br> <br>
+                       Стоймость
+                   </div>
+                   <div class="col-6 zero">
+                       <div id="summit">0</div> <br>
+                       <div id="timer">0</div>
+                   </div>
                 
                </div>
                  <input class="col-2 mt-5 mb-5 "  type="button" value="Оставить заявку">
@@ -340,13 +347,24 @@
         <footer>
             Copyright © 2021 Андрей Браун. Design by Web
         </footer>
+        
+            <div class="exitblock modal-body">
+    <div class="fon"></div>    
+    <div class="modaltext">    
+        <h2>Подождите!</h2>
+         У меня есть отличное предложение <a href="#price"><button  type="button" class="btn btn-dark" data-toggle="popover" >#firstorder</button></a>
+        введи этот код , в поле около цены , чтобы получить скидку на первый заказ!
+    </div>
+    <div class="closeblock">+</div>
+</div>
+        
         </main>
         <script src="js/jquery-3.6.0.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.magnific-popup.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/MyJs.js"></script>
-<!--        <script src="js/custom.js"></script>-->
+       <script src="js/custom.js"></script>
 </body>
 
 </html>

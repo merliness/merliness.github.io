@@ -155,6 +155,7 @@ main{
 .oen{
     border: 1px solid #fff;
     border-radius: 50%;
+    min-height: 150px;
 }
 .oen img{
     position: relative;
@@ -314,7 +315,8 @@ main{
 }
 .zero{
     display: flex;
-    justify-content: flex-end;
+    flex-direction:column;
+    align-items: flex-end;
 }
 .statistic{
     
@@ -459,4 +461,46 @@ footer{
 }
 .active{
     background-color: #e88402;
+}
+.exitblock{
+    display:none;    
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:100000;
+}
+.exitblock .btn btn-dark{
+    z-index:100002;
+}
+.exitblock .fon {
+	background: #F6FCFF;
+	opacity:.8;
+	position:fixed;
+	width:100%;
+	height:100%;
+}
+.exitblock .modaltext{
+    box-sizing: border-box;  
+    padding:20px 40px;
+    border: 2px solid #AEAEAE;
+    background: #F6FCFF;
+    position:fixed;
+    top:80px;
+    left:50%;
+    margin-left:-30%;
+    width:60%;
+    box-shadow: 0 4px 10px 2px rgba(0,0,0,0.5);
+}
+.closeblock {
+	cursor:pointer;
+	position: fixed;
+	line-height:60px;
+	font-size:82px;
+    transform: rotate(45deg);
+	text-align:center;
+	top:20px;
+	right:30px;
+	color: #337AB7;	
 }

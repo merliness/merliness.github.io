@@ -178,3 +178,6 @@
 .icons img:hover{
     transform: scale(1.2);
 }
+.closeblock:hover {
+	color: #000;	
+}

@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(window).scroll(function(){
+        //плавное меню 
        let scrollDistance = $(window).scrollTop();
-        
         $(".section").each((i,el)=> {
             
             if($(el).offset().top - $("nav").outerHeight() <= (scrollDistance-300)){
@@ -37,7 +37,7 @@ function onEntry (entry){
         }
     });
 };
-
+//пульсация фото
 function animBg() {
 	$('.oen img').animate({
 	   'width': '120%',
@@ -65,7 +65,7 @@ $('.single-item-rtl').slick({
 
 
 var block_show = false;
- 
+ //код бегаюших цифр
 function scrollTracking(){
 	if (block_show) {
 		return false;
@@ -101,4 +101,19 @@ $(window).scroll(function(){
 	
 $(document).ready(function(){ 
 	scrollTracking();
+});
+//всплывающее окно
+$(document).mouseleave(function(e){
+    if (e.clientY < 10) {
+        $(".exitblock").fadeIn("fast");
+    }    
+});
+$(document).click(function(e) {
+    if (($(".exitblock").is(':visible')) && (!$(e.target).closest(".exitblock .modaltext").length)) {
+        $(".exitblock").remove();
+    }
+    $('[data-toggle="popover"]').popover({
+    //Установление направления отображения popover
+    placement : 'top'
+  });
 });
