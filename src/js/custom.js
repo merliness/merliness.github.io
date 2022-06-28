@@ -3,9 +3,9 @@ let siteAnswer, designAnswer, adaptiveAnswer;
 const options = document.querySelectorAll('option');
 let calculator = {
 	price: [
-           [300,500,1000],
-           [500, 1000, 5000],
-           [1000,3000,7000]
+           [8000,12000,20000],
+           [2000, 4000, 8000],
+           [2000,3000,7000]
            ], 
 	days: [
            [1,3,5],
@@ -19,9 +19,14 @@ let calculator = {
         $('#timer').html(String(time));
          console.log(sum);
          console.log(time);
+   
 
 	}
 }
+$('body').on('input','#scid', function(){
+	this.value = this.value.replace(/[^a-z\s#]/gi, '',);
+});
+
 
 $('select').change(function(){
     getAnswers();
@@ -29,10 +34,15 @@ $('select').change(function(){
 
 
 function getAnswers(){
-    siteAnswer =document.querySelector('.tape_sait').value;
-    designAnswer = document.querySelector('.disaing').value;
-    adaptiveAnswer = document.querySelector('.adaptiviti').value;
+    siteAnswer = $('.tape_sait').val();
+    designAnswer = $('.disaing').val();
+    adaptiveAnswer = $('.adaptiviti').val();
     calculator.run(siteAnswer, designAnswer, adaptiveAnswer);
+     $('#scid').change(function(){
+        if ($('#scid').context = $('.btn').context ){
+         $('#summit') = String((Number($('#summit')) * 0.2));
+        }
+    });
 };
 
 getAnswers();
